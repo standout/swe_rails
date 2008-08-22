@@ -1,0 +1,39 @@
+Swedish Rails
+=============
+
+Swedish Rails is a plugin that aims to make web applications in Swedish easier.
+Since Rails comes with a great many defaults for text in english, it's only fair
+to have some support for other languages too. This plugin doesn't just create some
+fairly good swedish defaults; it also establishes what needs to be changed for
+a rails application to get good defaults in other languages.
+
+By default it also includes a filter that makes all your dynamic code return
+a Content-Type header with UTF-8. It makes sure to not clobber other mime-types,
+but if the Content-Type matches /^(\w+)\/(\w+)$/ a charset will be appended to this
+header.
+
+You can choose - through the $lang variable - if you want to run this plugin or not.
+If $lang matches /^sv/, everything will be changed, otherwise only the ContentTypeFilter
+will run.
+
+All language-specific code can be found under the name 'sv/' in different files 
+depending on functionality. A further step would be to create a generic language
+plugin which loads these files with require "#{$lang}/xyz".
+
+This plugin right now provides new inflections, but these are only added to the
+pluralize-method. That is, the rest of the inflections work with english. This
+plugin doesn't provide a way to actually have your database tables and models
+named in swedish. Just the helpers for output have this support.
+
+Some of the core classes are patched. String's downcase, upcase, swapcase and
+capitalize now works with åäöÅÄÖ. Integer ordinals are in Swedish. Array#to_sentence
+are in Swedish. All month and weekday names have been updated, so using strftime
+or to_s on these classes provide Swedish output. The helper method
+distance_of_time_in_words outputs Swedish. So does boolean attributes on models.
+ActiveRecords default validation messages have also been translated.
+
+
+Author: Ola Bini <ola.bini@ki.se>
+Distribution: http://opensource.ki.se/swe_rails.html
+Subversion: http://svn.ki.se/rails/plugins/swe_rails
+
