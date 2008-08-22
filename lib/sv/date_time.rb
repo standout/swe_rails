@@ -25,20 +25,6 @@ module SwedishRails
      :short  => "%d %b %H:%M",
      :long   => "%d %B, %Y %H:%M")
 
-  ::Date::MONTHS.merge!(
-                        'januari'  => 1, 'februari' => 2, 'mars '    => 3, 'april'    => 4,
-                        'maj'      => 5, 'juni'     => 6, 'juli'     => 7, 'augusti'  => 8,
-                        'september'=> 9, 'oktober'  =>10, 'november' =>11, 'december' =>12)
-  ::Date::DAYS.merge!(
-                      'söndag'   => 0, 'måndag'   => 1, 'tisdag'  => 2, 'onsdag'=> 3,
-                      'torsdag' => 4, 'fredag'   => 5, 'lördag' => 6)
-  ::Date::ABBR_MONTHS.merge!(
-        'jan'      => 1, 'feb'      => 2, 'mar'      => 3, 'apr'      => 4,
-        'maj'      => 5, 'jun'      => 6, 'jul'      => 7, 'aug'      => 8,
-        'sep'      => 9, 'okt'      =>10, 'nov'      =>11, 'dec'      =>12)
-  ::Date::ABBR_DAYS.merge!(
-        'sön'      => 0, 'mån'      => 1, 'tis'      => 2, 'ons'      => 3,
-        'tor'      => 4, 'fre'      => 5, 'lör'      => 6)
   ::Date::MONTHNAMES = [nil] + %w(Januari Februari Mars April Maj Juni Juli Augusti September Oktober November December)
   ::Date::DAYNAMES = %w(Söndag Måndag Tisdag Onsdag Torsdag Fredag Söndag)
   ::Date::ABBR_MONTHNAMES = [nil] + %w(Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec)
