@@ -26,7 +26,7 @@ module SwedishRails
      :long   => "%d %B, %Y %H:%M")
 
   ::Date::MONTHNAMES = [nil] + %w(Januari Februari Mars April Maj Juni Juli Augusti September Oktober November December)
-  ::Date::DAYNAMES = %w(Söndag Måndag Tisdag Onsdag Torsdag Fredag Söndag)
+  ::Date::DAYNAMES = %w(Söndag Måndag Tisdag Onsdag Torsdag Fredag Lördag)
   ::Date::ABBR_MONTHNAMES = [nil] + %w(Jan Feb Mar Apr Maj Jun Jul Aug Sep Okt Nov Dec)
   ::Date::ABBR_DAYNAMES = %w(Sön Mån Tis Ons Tor Fre Lör)
 
