@@ -1,5 +1,4 @@
-Swedish Rails
-=============
+= Swedish Rails
 
 Swedish Rails is a plugin that aims to make web applications in Swedish easier.
 Since Rails comes with a great many defaults for text in english, it's only fair
@@ -31,6 +30,11 @@ are in Swedish. All month and weekday names have been updated, so using strftime
 or to_s on these classes provide Swedish output. The helper method
 distance_of_time_in_words outputs Swedish. So does boolean attributes on models.
 ActiveRecords default validation messages have also been translated.
+
+== Installation
+
+As a git submodule (makes it easy to update):
+git-submodule add git://github.com/daniel/swe_rails.git vendor/plugins/swe_rails
 
 
 Author: Ola Bini <ola.bini@ki.se>
