@@ -6,7 +6,7 @@ module SwedishRails
       :confirmation => "stämmer inte övererens",
       :accepted  => "måste vara accepterad",
       :empty => "får ej vara tom",
-      :blank => "får ej vara blank",
+      :blank => "måste anges",
       :too_long => "är för lång (maximum är %d tecken)",
       :too_short => "är för kort (minimum är %d tecken)",
       :wrong_length => "har fel längd (ska vara %d tecken)",
