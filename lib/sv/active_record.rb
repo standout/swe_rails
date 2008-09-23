@@ -12,7 +12,7 @@ module SwedishRails
       :too_short => "är för kort (minimum är %d tecken)",
       :wrong_length => "har fel längd (ska vara %d tecken)",
       :taken => "har redan tagits",
-      :not_a_number => "är ej ett nummer",
+      :not_a_number => "är inte ett nummer",
       :greater_than => "måste vara större än %d",
       :greater_than_or_equal_to => "måste vara större än eller lika med %d",
       :equal_to => "måste vara samma som",
