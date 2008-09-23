@@ -24,8 +24,7 @@ pluralize-method. That is, the rest of the inflections work with english. This
 plugin doesn't provide a way to actually have your database tables and models
 named in swedish. Just the helpers for output have this support.
 
-Some of the core classes are patched. String's downcase, upcase, swapcase and
-capitalize now works with åäöÅÄÖ. Integer ordinals are in Swedish. Array#to_sentence
+Some of the core classes are patched. Integer ordinals are in Swedish. Array#to_sentence
 are in Swedish. All month and weekday names have been updated, so using strftime
 or to_s on these classes provide Swedish output. The helper method
 distance_of_time_in_words outputs Swedish. So does boolean attributes on models.

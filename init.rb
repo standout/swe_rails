@@ -10,7 +10,6 @@ if /^sv/ =~ $lang
   require 'sv/inflections'
   require 'sv/date_time'
   require 'sv/integer'
-  require 'sv/string'
   require 'sv/array'
   require 'sv/action_view'
   require 'sv/active_record'
