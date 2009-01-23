@@ -86,7 +86,7 @@ module SwedishRails
     end
   end
   
-  class Inflections < ::Inflector::Inflections
+  class Inflections < ActiveSupport::Inflector::Inflections
   end
 
   def self.inflections
